@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     
     
-    
+    //* ---------------  Variables and Outlets --------------------------------
     
     
     
@@ -27,12 +27,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButtonProperty: UIButton!
     
     
+        //* ---------------  Actions --------------------------------
+    
+    
     
     @IBAction func loginButtonAction(sender: UIButton) {
         let user = User()
         user.userName = "Faisal"
         user.userPassword = "abcdef"
-        print("Username \(user.userName) and Password")
+        print("Username \(user.userName) and Password \(user.userPassword)")
     }
     
     
