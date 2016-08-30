@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8506AD67B43F7B170C9B80BB /* Pods_Grates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */; };
+		C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FB71D6D97200090AE99 /* AppDelegate.swift */; };
+		C8371FBD1D6D97200090AE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8371FBB1D6D97200090AE99 /* Main.storyboard */; };
+		C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8371FBE1D6D97200090AE99 /* Grates.xcdatamodeld */; };
+		C8371FC21D6D97200090AE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8371FC11D6D97200090AE99 /* Assets.xcassets */; };
+		C8371FC51D6D97200090AE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8371FC31D6D97200090AE99 /* LaunchScreen.storyboard */; };
+		C8371FD01D6D97200090AE99 /* GratesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FCF1D6D97200090AE99 /* GratesTests.swift */; };
+		C8371FDB1D6D97200090AE99 /* GratesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FDA1D6D97200090AE99 /* GratesUITests.swift */; };
+		C8371FF01D6D9A400090AE99 /* GratesTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8371FEF1D6D9A400090AE99 /* GratesTableviewCell.xib */; };
+		C8371FF41D6DA4BB0090AE99 /* bg_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8371FF11D6DA4BB0090AE99 /* bg_1.jpg */; };
+		C8371FF51D6DA4BB0090AE99 /* bg_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8371FF21D6DA4BB0090AE99 /* bg_2.jpg */; };
+		C8371FF61D6DA4BB0090AE99 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C8371FF31D6DA4BB0090AE99 /* logo.png */; };
+		C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */; };
+		C8371FFC1D6DA8EB0090AE99 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */; };
+		C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */; };
+		C83720041D6DC3A70090AE99 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83720031D6DC3A70090AE99 /* SWRevealViewController.m */; };
+		C83720091D6DCCE60090AE99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720061D6DCCE60090AE99 /* menu.png */; };
+		C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720071D6DCCE60090AE99 /* menu@2x.png */; };
+		C837200B1D6DCCE60090AE99 /* menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720081D6DCCE60090AE99 /* menu@3x.png */; };
+		C86A3D8B1D74098B000F27D1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8A1D74098B000F27D1 /* LoginController.swift */; };
+		C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */; };
+		C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAA1D704A5D005AD951 /* User.swift */; };
+		C8AB4BAD1D706383005AD951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAC1D706383005AD951 /* Event.swift */; };
+		C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */; };
+		C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8371FCC1D6D97200090AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8371FAC1D6D97200090AE99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8371FB31D6D97200090AE99;
+			remoteInfo = Grates;
+		};
+		C8371FD71D6D97200090AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8371FAC1D6D97200090AE99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8371FB31D6D97200090AE99;
+			remoteInfo = Grates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68FBDB6DA3C375C55E46027E /* Pods-Grates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grates/Pods-Grates.debug.xcconfig"; sourceTree = "<group>"; };
+		C8371FB41D6D97200090AE99 /* Grates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8371FB71D6D97200090AE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8371FBC1D6D97200090AE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8371FBF1D6D97200090AE99 /* Grates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Grates.xcdatamodel; sourceTree = "<group>"; };
+		C8371FC11D6D97200090AE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Grates/Assets.xcassets; sourceTree = "<group>"; };
+		C8371FC41D6D97200090AE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8371FC61D6D97200090AE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8371FCB1D6D97200090AE99 /* GratesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GratesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8371FCF1D6D97200090AE99 /* GratesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratesTests.swift; sourceTree = "<group>"; };
+		C8371FD11D6D97200090AE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8371FD61D6D97200090AE99 /* GratesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GratesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8371FDA1D6D97200090AE99 /* GratesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratesUITests.swift; sourceTree = "<group>"; };
+		C8371FDC1D6D97200090AE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8371FEF1D6D9A400090AE99 /* GratesTableviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GratesTableviewCell.xib; sourceTree = "<group>"; };
+		C8371FF11D6DA4BB0090AE99 /* bg_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_1.jpg; sourceTree = "<group>"; };
+		C8371FF21D6DA4BB0090AE99 /* bg_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_2.jpg; sourceTree = "<group>"; };
+		C8371FF31D6DA4BB0090AE99 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C83720011D6DC3A60090AE99 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
+		C83720021D6DC3A70090AE99 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C83720031D6DC3A70090AE99 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C83720061D6DCCE60090AE99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		C83720071D6DCCE60090AE99 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		C83720081D6DCCE60090AE99 /* menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@3x.png"; sourceTree = "<group>"; };
+		C86A3D8A1D74098B000F27D1 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemPMainEventsController.swift; sourceTree = "<group>"; };
+		C8AB4BAA1D704A5D005AD951 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8AB4BAC1D706383005AD951 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
+		F3F51746B88681469C0134BC /* Pods-Grates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grates.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grates/Pods-Grates.release.xcconfig"; sourceTree = "<group>"; };
+		F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8371FB11D6D97200090AE99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8506AD67B43F7B170C9B80BB /* Pods_Grates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FC81D6D97200090AE99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FD31D6D97200090AE99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		824CD7C7D03967A1EAF4CBE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8371FAB1D6D97200090AE99 = {
+			isa = PBXGroup;
+			children = (
+				C8AB4BAE1D70776B005AD951 /* Firebase */,
+				C8C96DD41D6EF7F700A398DB /* Offline */,
+				C8C96DD31D6EF7EA00A398DB /* Network */,
+				C837200F1D6DD8420090AE99 /* Core Data */,
+				C837200E1D6DD79E0090AE99 /* Helper */,
+				C837200D1D6DD78D0090AE99 /* Services */,
+				C8371FFF1D6DC00B0090AE99 /* Libraries */,
+				C8371FEC1D6D98BB0090AE99 /* Assets */,
+				C8371FEB1D6D98AD0090AE99 /* Util */,
+				C8371FEA1D6D98A40090AE99 /* Controller */,
+				C8371FE91D6D98840090AE99 /* Model */,
+				C8371FE81D6D98780090AE99 /* View */,
+				C8371FB61D6D97200090AE99 /* Grates */,
+				C8371FCE1D6D97200090AE99 /* GratesTests */,
+				C8371FD91D6D97200090AE99 /* GratesUITests */,
+				C8371FB51D6D97200090AE99 /* Products */,
+				E3C9A1F593FF3E04966AF8EB /* Pods */,
+				824CD7C7D03967A1EAF4CBE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C8371FB51D6D97200090AE99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FB41D6D97200090AE99 /* Grates.app */,
+				C8371FCB1D6D97200090AE99 /* GratesTests.xctest */,
+				C8371FD61D6D97200090AE99 /* GratesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8371FB61D6D97200090AE99 /* Grates */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FC61D6D97200090AE99 /* Info.plist */,
+				C8371FBE1D6D97200090AE99 /* Grates.xcdatamodeld */,
+				C8371FB71D6D97200090AE99 /* AppDelegate.swift */,
+				C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */,
+			);
+			path = Grates;
+			sourceTree = "<group>";
+		};
+		C8371FCE1D6D97200090AE99 /* GratesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FCF1D6D97200090AE99 /* GratesTests.swift */,
+				C8371FD11D6D97200090AE99 /* Info.plist */,
+			);
+			path = GratesTests;
+			sourceTree = "<group>";
+		};
+		C8371FD91D6D97200090AE99 /* GratesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FDA1D6D97200090AE99 /* GratesUITests.swift */,
+				C8371FDC1D6D97200090AE99 /* Info.plist */,
+			);
+			path = GratesUITests;
+			sourceTree = "<group>";
+		};
+		C8371FE81D6D98780090AE99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FC31D6D97200090AE99 /* LaunchScreen.storyboard */,
+				C8371FEF1D6D9A400090AE99 /* GratesTableviewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8371FE91D6D98840090AE99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C837200C1D6DD6480090AE99 /* Classes */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C8371FEA1D6D98A40090AE99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
+				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
+				C8371FBB1D6D97200090AE99 /* Main.storyboard */,
+				C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */,
+				C86A3D8A1D74098B000F27D1 /* LoginController.swift */,
+				C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */,
+				C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C8371FEB1D6D98AD0090AE99 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		C8371FEC1D6D98BB0090AE99 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C8371FC11D6D97200090AE99 /* Assets.xcassets */,
+				C8371FEE1D6D98DF0090AE99 /* Json */,
+				C8371FED1D6D98CC0090AE99 /* images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C8371FED1D6D98CC0090AE99 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C83720051D6DCCD00090AE99 /* Menu_Button */,
+				C8371FF11D6DA4BB0090AE99 /* bg_1.jpg */,
+				C8371FF21D6DA4BB0090AE99 /* bg_2.jpg */,
+				C8371FF31D6DA4BB0090AE99 /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		C8371FEE1D6D98DF0090AE99 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		C8371FFF1D6DC00B0090AE99 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C83720001D6DC01D0090AE99 /* SWRevealViewController */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C83720001D6DC01D0090AE99 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C83720011D6DC3A60090AE99 /* Grates-Bridging-Header.h */,
+				C83720021D6DC3A70090AE99 /* SWRevealViewController.h */,
+				C83720031D6DC3A70090AE99 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C83720051D6DCCD00090AE99 /* Menu_Button */ = {
+			isa = PBXGroup;
+			children = (
+				C83720061D6DCCE60090AE99 /* menu.png */,
+				C83720071D6DCCE60090AE99 /* menu@2x.png */,
+				C83720081D6DCCE60090AE99 /* menu@3x.png */,
+			);
+			name = Menu_Button;
+			sourceTree = "<group>";
+		};
+		C837200C1D6DD6480090AE99 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8AB4BAA1D704A5D005AD951 /* User.swift */,
+				C8AB4BAC1D706383005AD951 /* Event.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C837200D1D6DD78D0090AE99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		C837200E1D6DD79E0090AE99 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		C837200F1D6DD8420090AE99 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		C8AB4BAE1D70776B005AD951 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		C8C96DD31D6EF7EA00A398DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		C8C96DD41D6EF7F700A398DB /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Offline;
+			sourceTree = "<group>";
+		};
+		E3C9A1F593FF3E04966AF8EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68FBDB6DA3C375C55E46027E /* Pods-Grates.debug.xcconfig */,
+				F3F51746B88681469C0134BC /* Pods-Grates.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8371FB31D6D97200090AE99 /* Grates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8371FDF1D6D97200090AE99 /* Build configuration list for PBXNativeTarget "Grates" */;
+			buildPhases = (
+				2BF714589E0CCA7BB32EB7BF /* [CP] Check Pods Manifest.lock */,
+				C8371FB01D6D97200090AE99 /* Sources */,
+				C8371FB11D6D97200090AE99 /* Frameworks */,
+				C8371FB21D6D97200090AE99 /* Resources */,
+				95FBD472AD33ACF45DA64848 /* [CP] Embed Pods Frameworks */,
+				B9658B2C177E114901D1500E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grates;
+			productName = Grates;
+			productReference = C8371FB41D6D97200090AE99 /* Grates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8371FCA1D6D97200090AE99 /* GratesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8371FE21D6D97200090AE99 /* Build configuration list for PBXNativeTarget "GratesTests" */;
+			buildPhases = (
+				C8371FC71D6D97200090AE99 /* Sources */,
+				C8371FC81D6D97200090AE99 /* Frameworks */,
+				C8371FC91D6D97200090AE99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8371FCD1D6D97200090AE99 /* PBXTargetDependency */,
+			);
+			name = GratesTests;
+			productName = GratesTests;
+			productReference = C8371FCB1D6D97200090AE99 /* GratesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8371FD51D6D97200090AE99 /* GratesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8371FE51D6D97200090AE99 /* Build configuration list for PBXNativeTarget "GratesUITests" */;
+			buildPhases = (
+				C8371FD21D6D97200090AE99 /* Sources */,
+				C8371FD31D6D97200090AE99 /* Frameworks */,
+				C8371FD41D6D97200090AE99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8371FD81D6D97200090AE99 /* PBXTargetDependency */,
+			);
+			name = GratesUITests;
+			productName = GratesUITests;
+			productReference = C8371FD61D6D97200090AE99 /* GratesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8371FAC1D6D97200090AE99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Irtiza Mahmood";
+				TargetAttributes = {
+					C8371FB31D6D97200090AE99 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C8371FCA1D6D97200090AE99 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C8371FB31D6D97200090AE99;
+					};
+					C8371FD51D6D97200090AE99 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C8371FB31D6D97200090AE99;
+					};
+				};
+			};
+			buildConfigurationList = C8371FAF1D6D97200090AE99 /* Build configuration list for PBXProject "Grates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8371FAB1D6D97200090AE99;
+			productRefGroup = C8371FB51D6D97200090AE99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8371FB31D6D97200090AE99 /* Grates */,
+				C8371FCA1D6D97200090AE99 /* GratesTests */,
+				C8371FD51D6D97200090AE99 /* GratesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8371FB21D6D97200090AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C837200B1D6DCCE60090AE99 /* menu@3x.png in Resources */,
+				C83720091D6DCCE60090AE99 /* menu.png in Resources */,
+				C8371FC51D6D97200090AE99 /* LaunchScreen.storyboard in Resources */,
+				C8371FF51D6DA4BB0090AE99 /* bg_2.jpg in Resources */,
+				C8371FF41D6DA4BB0090AE99 /* bg_1.jpg in Resources */,
+				C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */,
+				C8371FF01D6D9A400090AE99 /* GratesTableviewCell.xib in Resources */,
+				C8371FF61D6DA4BB0090AE99 /* logo.png in Resources */,
+				C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */,
+				C8371FC21D6D97200090AE99 /* Assets.xcassets in Resources */,
+				C8371FBD1D6D97200090AE99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FC91D6D97200090AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FD41D6D97200090AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF714589E0CCA7BB32EB7BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95FBD472AD33ACF45DA64848 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grates/Pods-Grates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9658B2C177E114901D1500E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grates/Pods-Grates-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8371FB01D6D97200090AE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83720041D6DC3A70090AE99 /* SWRevealViewController.m in Sources */,
+				C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */,
+				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
+				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
+				C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */,
+				C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */,
+				C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */,
+				C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */,
+				C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */,
+				C8371FFC1D6DA8EB0090AE99 /* SignUpViewController.swift in Sources */,
+				C86A3D8B1D74098B000F27D1 /* LoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FC71D6D97200090AE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8371FD01D6D97200090AE99 /* GratesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8371FD21D6D97200090AE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8371FDB1D6D97200090AE99 /* GratesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8371FCD1D6D97200090AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8371FB31D6D97200090AE99 /* Grates */;
+			targetProxy = C8371FCC1D6D97200090AE99 /* PBXContainerItemProxy */;
+		};
+		C8371FD81D6D97200090AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8371FB31D6D97200090AE99 /* Grates */;
+			targetProxy = C8371FD71D6D97200090AE99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8371FBB1D6D97200090AE99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8371FBC1D6D97200090AE99 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Grates;
+			sourceTree = "<group>";
+		};
+		C8371FC31D6D97200090AE99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8371FC41D6D97200090AE99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = Grates;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8371FDD1D6D97200090AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8371FDE1D6D97200090AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8371FE01D6D97200090AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FBDB6DA3C375C55E46027E /* Pods-Grates.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Grates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.Grates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Grates-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8371FE11D6D97200090AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F51746B88681469C0134BC /* Pods-Grates.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Grates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.Grates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Grates-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C8371FE31D6D97200090AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GratesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.GratesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grates.app/Grates";
+			};
+			name = Debug;
+		};
+		C8371FE41D6D97200090AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GratesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.GratesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grates.app/Grates";
+			};
+			name = Release;
+		};
+		C8371FE61D6D97200090AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GratesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.GratesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Grates;
+			};
+			name = Debug;
+		};
+		C8371FE71D6D97200090AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GratesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.GratesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Grates;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8371FAF1D6D97200090AE99 /* Build configuration list for PBXProject "Grates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8371FDD1D6D97200090AE99 /* Debug */,
+				C8371FDE1D6D97200090AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8371FDF1D6D97200090AE99 /* Build configuration list for PBXNativeTarget "Grates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8371FE01D6D97200090AE99 /* Debug */,
+				C8371FE11D6D97200090AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8371FE21D6D97200090AE99 /* Build configuration list for PBXNativeTarget "GratesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8371FE31D6D97200090AE99 /* Debug */,
+				C8371FE41D6D97200090AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8371FE51D6D97200090AE99 /* Build configuration list for PBXNativeTarget "GratesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8371FE61D6D97200090AE99 /* Debug */,
+				C8371FE71D6D97200090AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8371FBE1D6D97200090AE99 /* Grates.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8371FBF1D6D97200090AE99 /* Grates.xcdatamodel */,
+			);
+			currentVersion = C8371FBF1D6D97200090AE99 /* Grates.xcdatamodel */;
+			path = Grates.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C8371FAC1D6D97200090AE99 /* Project object */;
+}
