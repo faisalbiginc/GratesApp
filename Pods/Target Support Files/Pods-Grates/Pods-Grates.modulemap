@@ -1,0 +1,6 @@
+framework module Pods_Grates {
+  umbrella header "Pods-Grates-umbrella.h"
+
+  export *
+  module * { export * }
+}
