@@ -24,6 +24,6 @@ class User {
    
     
     
-    
+    var userTextData = ""
     
 }
