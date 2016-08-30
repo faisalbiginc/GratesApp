@@ -20,7 +20,7 @@ class User {
     var userImage : String = ""
     var userEvents : String = ""
     
-    
+    var userSelection = ""
    
     
     
