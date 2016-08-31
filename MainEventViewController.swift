@@ -49,50 +49,47 @@ class MainEventViewController: UIViewController , UITableViewDelegate , UITableV
     }
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    
+        tableViewOfGratesEvents.registerNib( UINib(nibName: "EventsTableViewCell", bundle: nil), forCellReuseIdentifier: "EventCell")
+        
+       
+    }
 
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    
+    
+    
+    
+    
+  
     
    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
     
-    var returnValue = 0
-    switch (eventSegmentedControl.selectedSegmentIndex) {
-    case 0: returnValue = hotEvents.count
-        break
-    case 1: returnValue = featuredEvents.count
-        break
-    default:
-    break
-        
-    }
-    return returnValue
+        return 10
     }
     
 
    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell   {
     
-        let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath)
-    
-
-    switch (eventSegmentedControl.selectedSegmentIndex) {
-    case 0: messageLabel.text = hotEvents[indexPath.row]
-    
-        
+        let cell = tableViewOfGratesEvents.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventsTableViewCell
     
     
-    
-        break
-    case 1: messageLabel.text = featuredEvents[indexPath.row]
-        break
-    default:
-        break
-        
-    }
 
     return cell
     
     }
 
-    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150
+    }
 
 // func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? // fixed font style. use custom view (UILabel) if you want something different   
 // {}

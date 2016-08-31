@@ -15,7 +15,9 @@ class TemPMainEventsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            performSelector(#selector(handleLogout), withObject: nil, afterDelay: 0)
+        }
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .Plain, target: self, action: #selector(handleLogout))
     }
@@ -27,6 +29,7 @@ class TemPMainEventsController: UITableViewController {
         
         
         let loginController = LoginController()
+        
         
         presentViewController(loginController, animated: true, completion: nil)
     }

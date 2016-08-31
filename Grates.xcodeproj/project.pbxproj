@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8506AD67B43F7B170C9B80BB /* Pods_Grates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */; };
+		C817CF101D75BE14002144EF /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817CF0E1D75BE14002144EF /* EventsTableViewCell.swift */; };
+		C817CF111D75BE14002144EF /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C817CF0F1D75BE14002144EF /* EventsTableViewCell.xib */; };
 		C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FB71D6D97200090AE99 /* AppDelegate.swift */; };
 		C8371FBD1D6D97200090AE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8371FBB1D6D97200090AE99 /* Main.storyboard */; };
 		C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8371FBE1D6D97200090AE99 /* Grates.xcdatamodeld */; };
@@ -26,6 +28,9 @@
 		C83720091D6DCCE60090AE99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720061D6DCCE60090AE99 /* menu.png */; };
 		C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720071D6DCCE60090AE99 /* menu@2x.png */; };
 		C837200B1D6DCCE60090AE99 /* menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720081D6DCCE60090AE99 /* menu@3x.png */; };
+		C858FB911D76F0210056801D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB901D76F0210056801D /* FBSDKCoreKit.framework */; };
+		C858FB931D76F4F10056801D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB921D76F4F10056801D /* FBSDKLoginKit.framework */; };
+		C858FB951D76F5070056801D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB941D76F5070056801D /* FBSDKShareKit.framework */; };
 		C86A3D8B1D74098B000F27D1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8A1D74098B000F27D1 /* LoginController.swift */; };
 		C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */; };
 		C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAA1D704A5D005AD951 /* User.swift */; };
@@ -53,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		68FBDB6DA3C375C55E46027E /* Pods-Grates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grates/Pods-Grates.debug.xcconfig"; sourceTree = "<group>"; };
+		C817CF0E1D75BE14002144EF /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		C817CF0F1D75BE14002144EF /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		C8371FB41D6D97200090AE99 /* Grates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8371FB71D6D97200090AE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8371FBC1D6D97200090AE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +86,9 @@
 		C83720061D6DCCE60090AE99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		C83720071D6DCCE60090AE99 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		C83720081D6DCCE60090AE99 /* menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@3x.png"; sourceTree = "<group>"; };
+		C858FB901D76F0210056801D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C858FB921D76F4F10056801D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C858FB941D76F5070056801D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		C86A3D8A1D74098B000F27D1 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemPMainEventsController.swift; sourceTree = "<group>"; };
 		C8AB4BAA1D704A5D005AD951 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -94,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C858FB951D76F5070056801D /* FBSDKShareKit.framework in Frameworks */,
+				C858FB911D76F0210056801D /* FBSDKCoreKit.framework in Frameworks */,
+				C858FB931D76F4F10056801D /* FBSDKLoginKit.framework in Frameworks */,
 				8506AD67B43F7B170C9B80BB /* Pods_Grates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,9 +131,21 @@
 		824CD7C7D03967A1EAF4CBE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C858FB941D76F5070056801D /* FBSDKShareKit.framework */,
+				C858FB901D76F0210056801D /* FBSDKCoreKit.framework */,
+				C858FB921D76F4F10056801D /* FBSDKLoginKit.framework */,
 				F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C817CF121D769E60002144EF /* Alt Login */ = {
+			isa = PBXGroup;
+			children = (
+				C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */,
+				C86A3D8A1D74098B000F27D1 /* LoginController.swift */,
+			);
+			name = "Alt Login";
 			sourceTree = "<group>";
 		};
 		C8371FAB1D6D97200090AE99 = {
@@ -206,13 +231,14 @@
 		C8371FEA1D6D98A40090AE99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C817CF121D769E60002144EF /* Alt Login */,
 				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
 				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
 				C8371FBB1D6D97200090AE99 /* Main.storyboard */,
-				C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */,
-				C86A3D8A1D74098B000F27D1 /* LoginController.swift */,
 				C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */,
 				C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */,
+				C817CF0E1D75BE14002144EF /* EventsTableViewCell.swift */,
+				C817CF0F1D75BE14002144EF /* EventsTableViewCell.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -455,6 +481,7 @@
 				C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */,
 				C8371FF01D6D9A400090AE99 /* GratesTableviewCell.xib in Resources */,
 				C8371FF61D6DA4BB0090AE99 /* logo.png in Resources */,
+				C817CF111D75BE14002144EF /* EventsTableViewCell.xib in Resources */,
 				C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */,
 				C8371FC21D6D97200090AE99 /* Assets.xcassets in Resources */,
 				C8371FBD1D6D97200090AE99 /* Main.storyboard in Resources */,
@@ -534,6 +561,7 @@
 				C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */,
 				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
 				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
+				C817CF101D75BE14002144EF /* EventsTableViewCell.swift in Sources */,
 				C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */,
 				C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */,
 				C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */,
@@ -688,6 +716,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/biginc/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Grates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.Grates;
@@ -703,6 +736,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/biginc/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Grates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Biginc.Grates;

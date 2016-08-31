@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="EventsTableViewCell" customModule="Grates" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="T0p-N4-z8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bth-5S-Tfh">
+                        <rect key="frame" x="209" y="60" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.86791980266571045" green="0.060402095317840576" blue="0.68446427583694458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="View Detail">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNq-AM-ufb">
+                        <rect key="frame" x="209" y="28" width="98" height="30"/>
+                        <color key="backgroundColor" red="0.094500713050365448" green="0.08597949892282486" blue="0.45897758007049561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Buy Ticket">
+                            <color key="titleColor" red="0.98417419195175171" green="0.9887431263923645" blue="0.96365326642990112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T0p-N4-z8Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="7jJ-7V-pCN"/>
+                    <constraint firstItem="T0p-N4-z8Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="KrJ-FA-dyC"/>
+                    <constraint firstItem="T0p-N4-z8Y" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="8" id="ca7-0V-m50"/>
+                    <constraint firstItem="T0p-N4-z8Y" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="jUv-zj-8Zk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageOfPerson" destination="T0p-N4-z8Y" id="CIH-xq-zPt"/>
+            </connections>
+            <point key="canvasLocation" x="587" y="419"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_1.jpg" width="640" height="1136"/>
+    </resources>
+</document>
