@@ -8,24 +8,29 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
+import FirebaseAuth
+import FBSDKLoginKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSignInDelegate , GIDSignInUIDelegate {
 
   //* ---------------  Variables and Outlets --------------------------------
 
     @IBOutlet weak var usernameTextBox: UITextField!
     @IBOutlet weak var passwordTextBox: UITextField!
     @IBOutlet weak var loginButtonProperty: UIButton!
-    var loginButton = FBSDKLoginButton()
     
-        //* ---------------  Actions --------------------------------
+    
+    //* ----------------- Facebook and Google Signin Button  ------------------
+    
+    var loginButton = FBSDKLoginButton()
+     let GoogleSigninButton = GIDSignInButton(frame: CGRectMake(0 , 0, 100, 50))
+    
+ //* ---------------  Actions --------------------------------
     
     @IBAction func loginButtonAction(sender: UIButton) {
-        let user = User()
-        user.userName = "Faisal"
-        user.userPassword = "abcdef"
-        print("Username \(user.userName) and Password \(user.userPassword)")
-    }
+           }
     
  @IBAction func gotoSignupAction(sender: UIButton) {
     }
@@ -33,17 +38,84 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
- // Optional: Place the button in the center of your view.
+    //*----------- Google Pluse Button on Login Page ------------------
     
-     //myFirstButton.frame = CGRectMake(15, -50, 300, 500)
     
-        self.loginButton.frame = CGRectMake(60, 530, 110, 30)
+    GoogleSigninButton.frame = CGRectMake(180, 530, 0, 0)
+    
+    view.addSubview(GoogleSigninButton)
+
+    GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+     GIDSignIn.sharedInstance().delegate = self
+    GIDSignIn.sharedInstance().uiDelegate = self
+
+     // Facebook Button   myFirstButton.frame = CGRectMake(15, -50, 300, 500)
+    
+        self.loginButton.frame = CGRectMake(60, 533, 110, 40)
         self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         self.loginButton.delegate = self
         self.view!.addSubview(loginButton)
 }
 
+ func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+    
+    if error != nil {
+        
+            print(error)
+             return
+   }
+    
+    
+    print(user.profile.email)
+    print(user.profile.imageURLWithDimension(400))
+    
+    
+        
+//        if let error = error {
+//        
+//            print(error.localizedDescription)
+//        }
+//        
+//        
+//        let authentication = user.authentication
+//        let credential = FIRGoogleAuthProvider.credentialWithIDToken(authentication.idToken, accessToken: authentication.accessToken)
+//        
+//        FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
+//            
+//            if error != nil {
+//                
+//                print(error!.localizedDescription)
+//                return
+//            }
+//            else {
+//            
+//                print(user?.email)
+//            
+//            }
+//            
+//            
+//       
+//            
+//            
+//          
+//            
+//     
+//        })
+    }
+    
+   func signIn(signIn: GIDSignIn!, didDisconnectWithUser user: GIDGoogleUser!, withError error: NSError!) {
+        
+        if let error = error {
+            
+            print(error.localizedDescription)
+            
+        }
+        
+        
+            try! FIRAuth.auth()?.signOut()
+
+    }
+ 
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged IN")
     }

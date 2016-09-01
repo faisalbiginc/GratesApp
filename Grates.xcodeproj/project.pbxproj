@@ -24,7 +24,6 @@
 		C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */; };
 		C8371FFC1D6DA8EB0090AE99 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */; };
 		C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */; };
-		C83720041D6DC3A70090AE99 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83720031D6DC3A70090AE99 /* SWRevealViewController.m */; };
 		C83720091D6DCCE60090AE99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720061D6DCCE60090AE99 /* menu.png */; };
 		C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720071D6DCCE60090AE99 /* menu@2x.png */; };
 		C837200B1D6DCCE60090AE99 /* menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83720081D6DCCE60090AE99 /* menu@3x.png */; };
@@ -80,9 +79,6 @@
 		C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		C83720011D6DC3A60090AE99 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
-		C83720021D6DC3A70090AE99 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		C83720031D6DC3A70090AE99 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C83720061D6DCCE60090AE99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		C83720071D6DCCE60090AE99 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		C83720081D6DCCE60090AE99 /* menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@3x.png"; sourceTree = "<group>"; };
@@ -95,6 +91,7 @@
 		C8AB4BAC1D706383005AD951 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
+		C8CF084E1D78352200C8D649 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3F51746B88681469C0134BC /* Pods-Grates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grates.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grates/Pods-Grates.release.xcconfig"; sourceTree = "<group>"; };
 		F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +148,7 @@
 		C8371FAB1D6D97200090AE99 = {
 			isa = PBXGroup;
 			children = (
+				C8CF084E1D78352200C8D649 /* Grates-Bridging-Header.h */,
 				C8AB4BAE1D70776B005AD951 /* Firebase */,
 				C8C96DD41D6EF7F700A398DB /* Offline */,
 				C8C96DD31D6EF7EA00A398DB /* Network */,
@@ -281,19 +279,8 @@
 		C8371FFF1D6DC00B0090AE99 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				C83720001D6DC01D0090AE99 /* SWRevealViewController */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		C83720001D6DC01D0090AE99 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C83720011D6DC3A60090AE99 /* Grates-Bridging-Header.h */,
-				C83720021D6DC3A70090AE99 /* SWRevealViewController.h */,
-				C83720031D6DC3A70090AE99 /* SWRevealViewController.m */,
-			);
-			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		C83720051D6DCCD00090AE99 /* Menu_Button */ = {
@@ -557,7 +544,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83720041D6DC3A70090AE99 /* SWRevealViewController.m in Sources */,
 				C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */,
 				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
 				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
