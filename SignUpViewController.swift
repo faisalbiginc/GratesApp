@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+class SignUpViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate  {
 
     @IBOutlet weak var userNameTextBox: UITextField!
     @IBOutlet weak var userEmailTextBox: UITextField!
@@ -18,37 +18,55 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate ,
     @IBOutlet weak var logoutButtonProperty: UIButton!
     
     @IBOutlet weak var userImageView: UIImageView!
-   
-    
-    @IBAction func userProfileImagePickerAction(sender: AnyObject) {
-        
-        
-        self.handlerSelectProfileImageView()
-        
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //checkUserLoginOrLogout()
         
-    }
-    
-    
-    
-    
-    func checkUserLoginOrLogout(){
+        userImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handlerSelectProfileImageView)  ))
         
-        
-        
+        userImageView.userInteractionEnabled = true
     }
 
+    func handlerSelectProfileImageView(){
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        presentViewController(picker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        
+        print("Canceled picker")
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        var selectedImageFromPicker: UIImage?
+        
+        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+            selectedImageFromPicker = editedImage
+        } else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            
+            selectedImageFromPicker = originalImage
+        }
+        
+        if let selectedImage = selectedImageFromPicker {
+            userImageView.image = selectedImage
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     @IBAction func registerUserInFirebaseAction(sender: AnyObject) {
         
         handleRegistration()
     }
-    
     
     func handleRegistration(){
         
@@ -65,24 +83,38 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate ,
             }
             
             // Successfully Authenticate USer now save in Database
+                guard let uid = user?.uid else {return}
             
-            let ref = FIRDatabase.database().referenceFromURL("https://grates-8ecd8.firebaseio.com/")
-            guard let uid = user?.uid else {return}
             
-            let userRefernce = ref.child("users").child(uid)
-            let values = ["name" : name , "email" : userEmail]
-
-            userRefernce.updateChildValues(values, withCompletionBlock: { (err, ref) in
+  let imageName = NSUUID().UUIDString
+            
+            // Save Profile image in Storage in Firebase 
+                        
+            let storageRef = FIRStorage.storage().reference().child("User_Images").child("\(imageName).png")
+            
+            if let uploadData = UIImagePNGRepresentation(self.userImageView.image!) {
+            
+            storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
                 
-                if err != nil {
                 
-                    print(err)
+                if error != nil {
+                    
+                    print(error)
                 }
                 
-                print("User Saved in Database")
- 
+                if let profileImageUrl = metadata?.downloadURL()?.absoluteString {
+                
+                let values = ["name" : name , "email" : userEmail , "profileImageUrl" :profileImageUrl]
+                     self.registerUserIntoDatabasewithUID(uid, values: values)
+                    
+                }
+
+                 
+               
+                
             })
-      
+            
+            }
         })
    
     }
@@ -92,7 +124,26 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate ,
     
     
     
+    func registerUserIntoDatabasewithUID(uid : String , values : [String: AnyObject]) {
+        
+        
+        
+        let ref = FIRDatabase.database().referenceFromURL("https://grates-8ecd8.firebaseio.com/")
     
+        
+          let userRefernce = ref.child("users").child(uid)
+        
+        userRefernce.updateChildValues(values, withCompletionBlock: { (err, ref) in
+            
+            if err != nil {
+                
+                print(err)
+            }
+            
+            print("User Saved in Database")
+            
+        })
+    }
     
     
     
@@ -305,48 +356,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate ,
     
     
     
-    
-    func handlerSelectProfileImageView(){
-        
-        
-        let imagePicker = UIImagePickerController()
-        
-        imagePicker.delegate = self
-        imagePicker.allowsEditing = true
-        
-        
-        
-        
-        
-        presentViewController(imagePicker, animated: true, completion: nil)
-        
-    }
-    
-    
-    
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        
-    print("Canceled picker")
-    }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
- 
-        var selectedImageFromPicker : UIImage?
-        
-        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
-
-            selectedImageFromPicker = editedImage
-        
-        }
-        
-        if let selectedImage = selectedImageFromPicker {
-        
-            userImageView.image = selectedImage
-        
-        }
-        
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+   
     
     
     

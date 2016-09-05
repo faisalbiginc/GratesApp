@@ -22,8 +22,7 @@ class UserProfileInfoController: UIViewController {
     
     @IBOutlet weak var userSignOutHandler: UIButton!
     
-    
-    
+
     
     
     
@@ -32,6 +31,8 @@ class UserProfileInfoController: UIViewController {
         
         
  
+        let eventUser = User()
+        
         
         
         

@@ -28,9 +28,5 @@ class TemPMainEventsController: UITableViewController {
         ref.updateChildValues(["SomeValue" : 213444])
         
         
-        let loginController = LoginController()
-        
-        
-        presentViewController(loginController, animated: true, completion: nil)
-    }
+         }
 }

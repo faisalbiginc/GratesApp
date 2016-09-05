@@ -30,12 +30,14 @@
 		C858FB911D76F0210056801D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB901D76F0210056801D /* FBSDKCoreKit.framework */; };
 		C858FB931D76F4F10056801D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB921D76F4F10056801D /* FBSDKLoginKit.framework */; };
 		C858FB951D76F5070056801D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB941D76F5070056801D /* FBSDKShareKit.framework */; };
-		C86A3D8B1D74098B000F27D1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8A1D74098B000F27D1 /* LoginController.swift */; };
+		C86A3D8B1D74098B000F27D1 /* LoginaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8A1D74098B000F27D1 /* LoginaController.swift */; };
 		C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */; };
 		C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAA1D704A5D005AD951 /* User.swift */; };
 		C8AB4BAD1D706383005AD951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAC1D706383005AD951 /* Event.swift */; };
 		C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */; };
 		C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */; };
+		C8C412BF1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */; };
+		C8C412C11D7D906F00B5B88A /* SignUpViewController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */; };
 		C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */; };
 		C8CF08501D79818000C8D649 /* imageDemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8CF084F1D79818000C8D649 /* imageDemo.jpg */; };
 		C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF08511D798F6D00C8D649 /* LoginManager.swift */; };
@@ -88,12 +90,14 @@
 		C858FB901D76F0210056801D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C858FB921D76F4F10056801D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C858FB941D76F5070056801D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		C86A3D8A1D74098B000F27D1 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C86A3D8A1D74098B000F27D1 /* LoginaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginaController.swift; sourceTree = "<group>"; };
 		C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemPMainEventsController.swift; sourceTree = "<group>"; };
 		C8AB4BAA1D704A5D005AD951 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8AB4BAC1D706383005AD951 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfoController.swift; sourceTree = "<group>"; };
+		C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllUsersProfileListTableView.swift; sourceTree = "<group>"; };
+		C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+handlers.swift"; sourceTree = "<group>"; };
 		C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
 		C8CF084E1D78352200C8D649 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8CF084F1D79818000C8D649 /* imageDemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageDemo.jpg; sourceTree = "<group>"; };
@@ -146,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */,
-				C86A3D8A1D74098B000F27D1 /* LoginController.swift */,
+				C86A3D8A1D74098B000F27D1 /* LoginaController.swift */,
 			);
 			name = "Alt Login";
 			sourceTree = "<group>";
@@ -240,11 +244,13 @@
 				C8371FBB1D6D97200090AE99 /* Main.storyboard */,
 				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
 				C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */,
+				C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */,
 				C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */,
 				C817CF0E1D75BE14002144EF /* EventsTableViewCell.swift */,
 				C817CF0F1D75BE14002144EF /* EventsTableViewCell.xib */,
 				C8CF08511D798F6D00C8D649 /* LoginManager.swift */,
 				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
+				C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -556,9 +562,11 @@
 			files = (
 				C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */,
 				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
+				C8C412BF1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift in Sources */,
 				C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */,
 				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
 				C817CF101D75BE14002144EF /* EventsTableViewCell.swift in Sources */,
+				C8C412C11D7D906F00B5B88A /* SignUpViewController+handlers.swift in Sources */,
 				C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */,
 				C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */,
 				C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */,
@@ -566,7 +574,7 @@
 				C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */,
 				C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */,
 				C8371FFC1D6DA8EB0090AE99 /* SignUpViewController.swift in Sources */,
-				C86A3D8B1D74098B000F27D1 /* LoginController.swift in Sources */,
+				C86A3D8B1D74098B000F27D1 /* LoginaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

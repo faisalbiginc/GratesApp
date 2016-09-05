@@ -183,7 +183,23 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
             print("Sign in")
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
           self.getUserInfo()
+            
+            
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewControllerWithIdentifier("SignUpViewController") as UIViewController
+//            self.presentViewController(vc, animated: true, completion: nil)
+//            
+//            
             
         
             

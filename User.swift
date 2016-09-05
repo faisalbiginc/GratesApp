@@ -15,4 +15,7 @@ class User {
     
     
    var userEmail = ""
+    
+    var userProfileUrl : String?
+    
 }
