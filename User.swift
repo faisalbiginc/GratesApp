@@ -14,16 +14,5 @@ class User {
     var nameOfUser : String = ""
     
     
-    var userName : String = ""
-    var userPassword : String = ""
-    
-    var userImage : String = ""
-    var userEvents : String = ""
-    
-    var userSelection = ""
-   
-    
-    
-    var userTextData = ""
-    
+   var userEmail = ""
 }

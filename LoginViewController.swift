@@ -15,13 +15,33 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSignInDelegate , GIDSignInUIDelegate {
 
+    
+    
+    
+    @IBOutlet weak var userDisplayName: UILabel!
+    
+    @IBAction func userProfileView(sender: AnyObject) {
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
   //* ---------------  Variables and Outlets --------------------------------
 
-    @IBOutlet weak var usernameTextBox: UITextField!
-    @IBOutlet weak var passwordTextBox: UITextField!
+
     @IBOutlet weak var loginButtonProperty: UIButton!
     
-    
+    @IBOutlet weak var userEmailTextBox: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
     //* ----------------- Facebook and Google Signin Button  ------------------
     
     var loginButton = FBSDKLoginButton()
@@ -29,10 +49,7 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
     
  //* ---------------  Actions --------------------------------
     
-    @IBAction func loginButtonAction(sender: UIButton) {
-           }
-    
- @IBAction func gotoSignupAction(sender: UIButton) {
+    @IBAction func gotoSignupAction(sender: UIButton) {
     }
     
  override func viewDidLoad() {
@@ -55,8 +72,26 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
         self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         self.loginButton.delegate = self
         self.view!.addSubview(loginButton)
-}
 
+    
+    
+    
+    
+      // ---------------------- Login with Email ----------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      }
+    
+    
+ 
  func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
     
     if error != nil {
@@ -68,39 +103,6 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
     
     print(user.profile.email)
     print(user.profile.imageURLWithDimension(400))
-    
-    
-        
-//        if let error = error {
-//        
-//            print(error.localizedDescription)
-//        }
-//        
-//        
-//        let authentication = user.authentication
-//        let credential = FIRGoogleAuthProvider.credentialWithIDToken(authentication.idToken, accessToken: authentication.accessToken)
-//        
-//        FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
-//            
-//            if error != nil {
-//                
-//                print(error!.localizedDescription)
-//                return
-//            }
-//            else {
-//            
-//                print(user?.email)
-//            
-//            }
-//            
-//            
-//       
-//            
-//            
-//          
-//            
-//     
-//        })
     }
     
    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user: GIDGoogleUser!, withError error: NSError!) {
@@ -110,9 +112,8 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
             print(error.localizedDescription)
             
         }
-        
-        
-            try! FIRAuth.auth()?.signOut()
+
+    try! FIRAuth.auth()?.signOut()
 
     }
  
@@ -124,5 +125,154 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate , GIDSign
         print("User Logged OUTTTTT")
     }
 
+
+    
+    /**  -------------------------------------------------------
+     
+     - Action : Signin Process With Login Button
+     
+     -----------------------------------------------------------
+     */
+    
+    
+    
+    func getUserInfo() {
+        
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            print("NOt loged in")
+        }
+        
+        
+        else {
+            
+            
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            
+            print(uid)
+            FIRDatabase.database().reference().child("users").child(uid!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                   self.userDisplayName.text = dictionary["name"] as? String
+                    print(dictionary["name"] as? String)
+                }
+                
+                }, withCancelBlock: nil)
+        }
+    }
+        
+    
+
+
+    
+    @IBAction func userLoginButtonAction(sender: AnyObject) {
+        
+        guard let userEmail = userEmailTextBox.text , userPassword = userPasswordTextField.text else {
+            print("Form not valid")
+            return
+        }
+        
+        FIRAuth.auth()?.signInWithEmail(userEmail, password: userPassword, completion: { (user, error) in
+            
+            if error != nil {
+                print("error")
+                return
+            }
+
+            // Login Successful
+
+            print("Sign in")
+            
+            
+          self.getUserInfo()
+            
+        
+            
+        })
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//        if userEmailTextBox.text == "" || userPasswordTextField.text == ""{
+//            
+//            let alertController = UIAlertController(title:"OOPs" , message: "Enter Username Email and Password", preferredStyle: .Alert)
+//            let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+//            alertController.addAction(defaultAction)
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//            
+//            
+//        } else {
+//            
+//            FIRAuth.auth()?.signInWithEmail(userEmailTextBox.text!, password: userPasswordTextField.text!, completion: { (user, error) in
+//                
+//                if error == nil {
+//                    
+//                    // OK
+//                print("User Login Successfull")
+//                    
+//                } else
+//                    
+//                {
+//                    // Problem here
+//                    
+//                    let alertController = UIAlertController(title:"OOPs" , message: error?.localizedDescription, preferredStyle: .Alert)
+//                    let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+//                    alertController.addAction(defaultAction)
+//                    self.presentViewController(alertController, animated: true, completion: nil)
+//                    
+//                }
+//            })
+//            
+//        }
+        
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }

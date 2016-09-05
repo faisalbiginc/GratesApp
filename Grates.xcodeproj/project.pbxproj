@@ -35,7 +35,10 @@
 		C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAA1D704A5D005AD951 /* User.swift */; };
 		C8AB4BAD1D706383005AD951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAC1D706383005AD951 /* Event.swift */; };
 		C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */; };
+		C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */; };
 		C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */; };
+		C8CF08501D79818000C8D649 /* imageDemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8CF084F1D79818000C8D649 /* imageDemo.jpg */; };
+		C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF08511D798F6D00C8D649 /* LoginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +93,11 @@
 		C8AB4BAA1D704A5D005AD951 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8AB4BAC1D706383005AD951 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfoController.swift; sourceTree = "<group>"; };
 		C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
 		C8CF084E1D78352200C8D649 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8CF084F1D79818000C8D649 /* imageDemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageDemo.jpg; sourceTree = "<group>"; };
+		C8CF08511D798F6D00C8D649 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		F3F51746B88681469C0134BC /* Pods-Grates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grates.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grates/Pods-Grates.release.xcconfig"; sourceTree = "<group>"; };
 		F8E1CE61644D9EDE0468596E /* Pods_Grates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -230,13 +236,15 @@
 			isa = PBXGroup;
 			children = (
 				C817CF121D769E60002144EF /* Alt Login */,
-				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
-				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
+				C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */,
 				C8371FBB1D6D97200090AE99 /* Main.storyboard */,
+				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
 				C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */,
 				C8371FFD1D6DA9070090AE99 /* ForgotPasswordViewController.swift */,
 				C817CF0E1D75BE14002144EF /* EventsTableViewCell.swift */,
 				C817CF0F1D75BE14002144EF /* EventsTableViewCell.xib */,
+				C8CF08511D798F6D00C8D649 /* LoginManager.swift */,
+				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 			children = (
 				C83720051D6DCCD00090AE99 /* Menu_Button */,
 				C8371FF11D6DA4BB0090AE99 /* bg_1.jpg */,
+				C8CF084F1D79818000C8D649 /* imageDemo.jpg */,
 				C8371FF21D6DA4BB0090AE99 /* bg_2.jpg */,
 				C8371FF31D6DA4BB0090AE99 /* logo.png */,
 			);
@@ -461,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C837200B1D6DCCE60090AE99 /* menu@3x.png in Resources */,
+				C8CF08501D79818000C8D649 /* imageDemo.jpg in Resources */,
 				C83720091D6DCCE60090AE99 /* menu.png in Resources */,
 				C8371FC51D6D97200090AE99 /* LaunchScreen.storyboard in Resources */,
 				C8371FF51D6DA4BB0090AE99 /* bg_2.jpg in Resources */,
@@ -546,9 +556,11 @@
 			files = (
 				C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */,
 				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
+				C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */,
 				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
 				C817CF101D75BE14002144EF /* EventsTableViewCell.swift in Sources */,
 				C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */,
+				C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */,
 				C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */,
 				C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */,
 				C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */,
