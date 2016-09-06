@@ -31,9 +31,10 @@ class UserProfileInfoController: UIViewController {
         
         
  
-        let eventUser = User()
-        
-        
+        userImageView.image = UIImage(named: "userimage1.jpeg")
+        userImageView.layer.cornerRadius = 100
+        userImageView.layer.masksToBounds = true
+        userImageView.translatesAutoresizingMaskIntoConstraints = false
         
         
     }

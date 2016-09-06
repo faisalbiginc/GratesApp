@@ -38,6 +38,7 @@
 		C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */; };
 		C8C412BF1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */; };
 		C8C412C11D7D906F00B5B88A /* SignUpViewController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */; };
+		C8C412C31D7E8E3D00B5B88A /* userimage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8C412C21D7E8E3D00B5B88A /* userimage1.jpeg */; };
 		C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */; };
 		C8CF08501D79818000C8D649 /* imageDemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8CF084F1D79818000C8D649 /* imageDemo.jpg */; };
 		C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF08511D798F6D00C8D649 /* LoginManager.swift */; };
@@ -98,6 +99,7 @@
 		C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfoController.swift; sourceTree = "<group>"; };
 		C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllUsersProfileListTableView.swift; sourceTree = "<group>"; };
 		C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+handlers.swift"; sourceTree = "<group>"; };
+		C8C412C21D7E8E3D00B5B88A /* userimage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userimage1.jpeg; sourceTree = "<group>"; };
 		C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
 		C8CF084E1D78352200C8D649 /* Grates-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grates-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8CF084F1D79818000C8D649 /* imageDemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageDemo.jpg; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		C83720051D6DCCD00090AE99 /* Menu_Button */ = {
 			isa = PBXGroup;
 			children = (
+				C8C412C21D7E8E3D00B5B88A /* userimage1.jpeg */,
 				C83720061D6DCCE60090AE99 /* menu.png */,
 				C83720071D6DCCE60090AE99 /* menu@2x.png */,
 				C83720081D6DCCE60090AE99 /* menu@3x.png */,
@@ -479,6 +482,7 @@
 				C8CF08501D79818000C8D649 /* imageDemo.jpg in Resources */,
 				C83720091D6DCCE60090AE99 /* menu.png in Resources */,
 				C8371FC51D6D97200090AE99 /* LaunchScreen.storyboard in Resources */,
+				C8C412C31D7E8E3D00B5B88A /* userimage1.jpeg in Resources */,
 				C8371FF51D6DA4BB0090AE99 /* bg_2.jpg in Resources */,
 				C8371FF41D6DA4BB0090AE99 /* bg_1.jpg in Resources */,
 				C837200A1D6DCCE60090AE99 /* menu@2x.png in Resources */,
