@@ -32,6 +32,10 @@
 		C858FB951D76F5070056801D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858FB941D76F5070056801D /* FBSDKShareKit.framework */; };
 		C86A3D8B1D74098B000F27D1 /* LoginaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8A1D74098B000F27D1 /* LoginaController.swift */; };
 		C86A3D8D1D740C2A000F27D1 /* TemPMainEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */; };
+		C89C278C1D81276200A6D5FC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C278B1D81276200A6D5FC /* DashboardViewController.swift */; };
+		C89C278F1D812AC800A6D5FC /* aboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C278E1D812AC800A6D5FC /* aboutUsController.swift */; };
+		C89C27911D812BD700A6D5FC /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C27901D812BD700A6D5FC /* settingsViewController.swift */; };
+		C89C27931D8141AF00A6D5FC /* AllUsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C27921D8141AF00A6D5FC /* AllUsersTableView.swift */; };
 		C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAA1D704A5D005AD951 /* User.swift */; };
 		C8AB4BAD1D706383005AD951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB4BAC1D706383005AD951 /* Event.swift */; };
 		C8AB4BB01D707780005AD951 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */; };
@@ -93,6 +97,10 @@
 		C858FB941D76F5070056801D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		C86A3D8A1D74098B000F27D1 /* LoginaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginaController.swift; sourceTree = "<group>"; };
 		C86A3D8C1D740C2A000F27D1 /* TemPMainEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemPMainEventsController.swift; sourceTree = "<group>"; };
+		C89C278B1D81276200A6D5FC /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C89C278E1D812AC800A6D5FC /* aboutUsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutUsController.swift; sourceTree = "<group>"; };
+		C89C27901D812BD700A6D5FC /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		C89C27921D8141AF00A6D5FC /* AllUsersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllUsersTableView.swift; sourceTree = "<group>"; };
 		C8AB4BAA1D704A5D005AD951 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8AB4BAC1D706383005AD951 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C8AB4BAF1D707780005AD951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -241,9 +249,11 @@
 		C8371FEA1D6D98A40090AE99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C89C278D1D812AA100A6D5FC /* Dashboard  */,
 				C817CF121D769E60002144EF /* Alt Login */,
 				C8C412BC1D7D580700B5B88A /* UserProfileInfoController.swift */,
 				C8371FBB1D6D97200090AE99 /* Main.storyboard */,
+				C89C278B1D81276200A6D5FC /* DashboardViewController.swift */,
 				C8371FF91D6DA8CE0090AE99 /* LoginViewController.swift */,
 				C8371FFB1D6DA8EB0090AE99 /* SignUpViewController.swift */,
 				C8C412C01D7D906F00B5B88A /* SignUpViewController+handlers.swift */,
@@ -253,6 +263,7 @@
 				C8CF08511D798F6D00C8D649 /* LoginManager.swift */,
 				C8C96DD51D6F35AF00A398DB /* MainEventViewController.swift */,
 				C8C412BE1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift */,
+				C89C27921D8141AF00A6D5FC /* AllUsersTableView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -339,6 +350,15 @@
 			children = (
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		C89C278D1D812AA100A6D5FC /* Dashboard  */ = {
+			isa = PBXGroup;
+			children = (
+				C89C278E1D812AC800A6D5FC /* aboutUsController.swift */,
+				C89C27901D812BD700A6D5FC /* settingsViewController.swift */,
+			);
+			name = "Dashboard ";
 			sourceTree = "<group>";
 		};
 		C8AB4BAE1D70776B005AD951 /* Firebase */ = {
@@ -568,17 +588,21 @@
 				C8AB4BAD1D706383005AD951 /* Event.swift in Sources */,
 				C8C412BF1D7D7DDD00B5B88A /* AllUsersProfileListTableView.swift in Sources */,
 				C8C412BD1D7D580700B5B88A /* UserProfileInfoController.swift in Sources */,
+				C89C278F1D812AC800A6D5FC /* aboutUsController.swift in Sources */,
 				C8371FFA1D6DA8CE0090AE99 /* LoginViewController.swift in Sources */,
+				C89C27931D8141AF00A6D5FC /* AllUsersTableView.swift in Sources */,
 				C817CF101D75BE14002144EF /* EventsTableViewCell.swift in Sources */,
 				C8C412C11D7D906F00B5B88A /* SignUpViewController+handlers.swift in Sources */,
 				C8371FC01D6D97200090AE99 /* Grates.xcdatamodeld in Sources */,
 				C8CF08521D798F6D00C8D649 /* LoginManager.swift in Sources */,
 				C8371FFE1D6DA9070090AE99 /* ForgotPasswordViewController.swift in Sources */,
+				C89C27911D812BD700A6D5FC /* settingsViewController.swift in Sources */,
 				C8AB4BAB1D704A5D005AD951 /* User.swift in Sources */,
 				C8371FB81D6D97200090AE99 /* AppDelegate.swift in Sources */,
 				C8C96DD61D6F35AF00A398DB /* MainEventViewController.swift in Sources */,
 				C8371FFC1D6DA8EB0090AE99 /* SignUpViewController.swift in Sources */,
 				C86A3D8B1D74098B000F27D1 /* LoginaController.swift in Sources */,
+				C89C278C1D81276200A6D5FC /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

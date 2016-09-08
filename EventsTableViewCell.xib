@@ -31,6 +31,9 @@
                         <state key="normal" title="Buy Ticket">
                             <color key="titleColor" red="0.98417419195175171" green="0.9887431263923645" blue="0.96365326642990112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <connections>
+                            <action selector="buyGratesTickets:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H7K-ES-NhZ"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

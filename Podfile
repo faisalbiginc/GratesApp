@@ -12,7 +12,7 @@ pod ‘Firebase/Auth’
 pod ‘Firebase/Storage’
 pod ‘Firebase/Database’
 pod 'Firebase/Core'
-
+pod 'Braintree'
 pod 'Google/SignIn'
 
 end

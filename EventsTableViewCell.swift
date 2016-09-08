@@ -13,10 +13,14 @@ class EventsTableViewCell: UITableViewCell {
     
     
     
-    @IBOutlet weak var nameOfPerson: UILabel!
     
     
     
+    @IBAction func buyGratesTickets(sender: AnyObject) {
+        
+        
+        
+    }
     
     
     

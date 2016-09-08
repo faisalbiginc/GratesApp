@@ -18,4 +18,6 @@ class User {
     
     var userProfileUrl : String?
     
+    
+    
 }

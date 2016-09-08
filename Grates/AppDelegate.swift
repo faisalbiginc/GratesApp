@@ -13,6 +13,8 @@ import FBSDKLoginKit
 import Google
 import GoogleSignIn
 
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -26,37 +28,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.makeKeyWindow()
 //        window?.rootViewController = UINavigationController(rootViewController: TemPMainEventsController())
 //        
-        
-        
+
         // Firebase 
         
-        
         FIRApp.configure()
-       
-        
-        
-        
-        
-        
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-
 //        FIRAnalyticsConfiguration.sharedInstance().setAnalyticsCollectionEnabled(false)
-        
-        
-        
-        
         
         return true
     }
-    
-    
-    
+
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         var handled = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
         // Add any custom logic here.
         return handled
     }
-    
     
     // Google Sign in button
     
@@ -66,9 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                     sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
                                                     annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
     }
-    
-    
-    
+
 //
 //    
 //    func application(application: UIApplication,
@@ -97,20 +81,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    
-    
-    
-    
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         FBSDKAppEvents.activateApp()
     }
-    
-    
-    
-    
-    
-    
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.

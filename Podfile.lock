@@ -1,4 +1,26 @@
 PODS:
+  - Braintree (4.5.0):
+    - Braintree/Card (= 4.5.0)
+    - Braintree/Core (= 4.5.0)
+    - Braintree/PayPal (= 4.5.0)
+    - Braintree/UI (= 4.5.0)
+  - Braintree/Card (4.5.0):
+    - Braintree/Core
+  - Braintree/Core (4.5.0)
+  - Braintree/PayPal (4.5.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.5.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.5.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.5.0)
+  - Braintree/UI (4.5.0):
+    - Braintree/Card
+    - Braintree/Core
   - Firebase (3.5.2):
     - Firebase/Core (= 3.5.2)
   - Firebase/Analytics (3.5.2):
@@ -57,6 +79,7 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - Braintree
   - Firebase
   - Firebase/Auth
   - Firebase/Core
@@ -65,6 +88,7 @@ DEPENDENCIES:
   - Google/SignIn
 
 SPEC CHECKSUMS:
+  Braintree: 7bcebecbcfe5210ed4438a97638c230d2521b54d
   Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
   FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
   FirebaseAuth: 26fd291c3b552fc9658420b867520d5ae080421c
@@ -81,6 +105,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: 42b22b560f006f7bf9fb91da260ec9bc1190cc67
+PODFILE CHECKSUM: 500a5e8480745401da64f7a275b686d15d11229d
 
 COCOAPODS: 1.0.1
