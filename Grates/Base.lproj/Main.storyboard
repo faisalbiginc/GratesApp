@@ -405,7 +405,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbL-w1-mGJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbL-w1-mGJ">
                                 <rect key="frame" x="79" y="28" width="229" height="211"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fmq786@yahoo.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITN-NM-ptd">
@@ -972,5 +972,6 @@
         <image name="bg_1.jpg" width="640" height="1136"/>
         <image name="imageDemo.jpg" width="960" height="960"/>
         <image name="logo.png" width="359" height="76"/>
+        <image name="menu.png" width="22" height="22"/>
     </resources>
 </document>
